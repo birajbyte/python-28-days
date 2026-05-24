@@ -1,15 +1,15 @@
 # Day 15
 # 1.Remove all duplicate characters from a string
 #manual way
-# word = input("Enter the string  ").lower()
-# result = ""
-# for i in word:
-#     if i not in result:
-#         result += i
-# print(result)
-# #pythonic way
-# result1 = "".join(dict.fromkeys(word))
-# print(result1)
+word = input("Enter the string  ").lower()
+result = ""
+for i in word:
+    if i not in result:
+        result += i
+print(result)
+#pythonic way
+result1 = "".join(dict.fromkeys(word))#dict.fromkeys() make key with value none as key are unique 
+print(result1)#join can also be used for dic too hehe
 
 # 2.Find keys with the maximum value in a dict
 dic = marks = {
